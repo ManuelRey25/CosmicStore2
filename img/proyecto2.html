@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exploración Espacial</title>
+	<link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/pace.ico">
+</head>
+<body>
+<header>
+    <nav id='menu'>
+        <ul>
+            <li><a href='index.html'>CosmicStore2</a></li>
+            <li><a href='ofertasespeciales.html' title="Ofertas de la semana">Ofertas Especiales</a></li>
+            <li><a href='tienda.html'>Tienda Espacial</a>
+                <ul>
+                    <li><a href='resenas-espaciales.html'>Reseñas de seguidores</a></li>
+                    <li><a href='hubble.html'>Libros</a></li>
+                </ul>
+            </li>
+            <li><a>Sistema Solar</a>
+                <ul>
+                    <li><a href='sistemasolar.html'>Imagens</a>
+                        <ul>
+                            <li><a href='sistemasolar.html'>Planetas</a></li>
+                            <li><a href='galaxias.html'>Galaxias</a></li>
+                            <li><a href='hubble.html'>Telescopio Hubble</a></li>
+                        </ul>
+                    </li>
+                    <li><a href='noticias.html'>Noticias</a>
+                        <ul>
+                            <li><a href='noticias.html' target="_blank">Noticias</a></li>
+                            <li><a href='noticasspacex.html' target="_blank">Space X</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a>Contenido Adicional</a>
+                <ul>
+                    <li><a href='comentarios.html' title="Dejanos tus comentarios">Comentarios</a></li>
+                    <li><a href='donaciones.html'>Dejanos una donacion</a></li>
+                </ul>
+            </li>
+            <li><a title="Conócenos un poco más">Sobre Nosotros</a>
+                <ul>
+                    <li><a>Desarrollador</a>
+                        <ul>
+                            <li><a href='manuel/index2.html' target="_blank">Manuel</a></li>
+                        </ul>
+                    </li>
+                    <li><a title="Información adicional" target="_blank">Nuestra Misión</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div id="logoContainer" class="logo-container">
+            <a href='tienda.html'><img id="logoImage" src="img/logo.jpg" alt="logo"></a>
+        </div>
+    </nav>
+</header>
+<!-- IMAGEN HEADER QUE YA NO ES HEADER -->
+<section class="imagenheader text-center">
+   <div>    
+           <br></br><br></br>
+       <p class="pheader text-center">Bienvenido a CosmicStore2. Descubre las Maravillas de nuestro universo.</p>
+   </div>
+</section>
+<!-- Sección Principal de E-commerce -->
+<main class="ecommerce-main">
+    <!-- Productos Destacados -->
+    <section class="featured-products">
+        <h2 class="text-stars">Productos Destacados del Universo</h2>
+        <div class="product-grid">
+            <article class="product-card">
+                <div class="product-badge">Más Vendido</div>
+                <img src="img/globo3.jpg" alt="Telescopio Profesional X-3000" class="product-image">
+                <div class="product-info">
+                    <h3>Telescopio Profesional X-3000</h3>
+                    <p class="product-description">Explora las estrellas con una claridad sin precedentes</p>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="reviews">(128 reseñas)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$599.99</span>
+                        <span class="original-price">$799.99</span>
+                    </div>
+                    <button class="add-to-cart-btn">Añadir al Carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge">Nuevo</div>
+                <img src="img/cohete3.jpg" alt="Meteorito Lunar Certificado" class="product-image">
+                <div class="product-info">
+                    <h3>Meteorito Lunar Certificado</h3>
+                    <p class="product-description">Fragmento auténtico de la Luna con certificación NASA</p>
+                    <div class="product-rating">
+                        <span class="stars">★★★★☆</span>
+                        <span class="reviews">(84 reseñas)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$299.99</span>
+                    </div>
+                    <button class="add-to-cart-btn">Añadir al Carrito</button>
+                </div>
+            </article>
+
+            <article class="product-card">
+                <div class="product-badge">Oferta</div>
+                <img src="img/telescopio3.jpg" alt="Traje Espacial Replica" class="product-image">
+                <div class="product-info">
+                    <h3>Traje Espacial Réplica</h3>
+                    <p class="product-description">Réplica exacta del traje usado en la ISS</p>
+                    <div class="product-rating">
+                        <span class="stars">★★★★★</span>
+                        <span class="reviews">(256 reseñas)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">$1,999.99</span>
+                        <span class="original-price">$2,499.99</span>
+                    </div>
+                    <button class="add-to-cart-btn">Añadir al Carrito</button>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Barra Lateral de Categorías y Filtros -->
+    <aside class="shop-sidebar">
+        <div class="category-filter">
+            <h3>Categorías</h3>
+            <ul>
+                <li><a href="#telescopios">Telescopios</a></li>
+                <li><a href="#meteoritos">Meteoritos</a></li>
+                <li><a href="#trajes">Trajes Espaciales</a></li>
+                <li><a href="#modelos">Modelos a Escala</a></li>
+                <li><a href="#libros">Libros Espaciales</a></li>
+            </ul>
+        </div>
+
+        <div class="price-filter">
+            <h3>Filtrar por Precio</h3>
+            <input type="range" min="0" max="5000" class="price-range">
+            <div class="price-inputs">
+                <input type="number" placeholder="Min" class="min-price">
+                <input type="number" placeholder="Max" class="max-price">
+            </div>
+        </div>
+
+        <div class="featured-collection">
+            <h3>Colección Especial</h3>
+            <div class="collection-preview">
+                <img src="/api/placeholder/150/150" alt="Colección Apollo" class="collection-image">
+                <h4>Colección Apollo</h4>
+                <p>Edición limitada de artefactos históricos</p>
+                <a href="#apollo" class="view-collection">Ver Colección</a>
+            </div>
+        </div>
+    </aside>
+    <div class="ecommerce-main">
+        <!-- Contenido Principal (Izquierda) -->
+        <div class="main-content">
+          <!-- Hero Section -->
+          <section class="featured-collection-hero">
+            <h2 class="section-title">Colección Espacial Premium</h2>
+            <div class="hero-grid">
+              <div class="hero-item main-hero">
+                <img src="/api/placeholder/400/300" alt="Telescopio Espacial James Webb - Réplica" class="hero-image">
+                <div class="hero-content">
+                  <span class="hero-badge">Nuevo Lanzamiento</span>
+                  <h3>Telescopio Espacial James Webb - Réplica</h3>
+                  <p class="hero-price">$2,499.99</p>
+                  <button class="cta-button">Reservar Ahora</button>
+                </div>
+              </div>
+            </div>
+          </section>
+      
+          <!-- Categorías Destacadas -->
+          <section class="featured-categories">
+            <h2 class="section-title">Explora Nuestras Categorías</h2>
+            <div class="categories-grid">
+              <div class="category-card">
+                <div class="category-icon">🔭</div>
+                <h3>Telescopios</h3>
+                <p>Desde principiantes hasta profesionales</p>
+                <ul class="category-products">
+                  <li>Telescopio Reflector 8"</li>
+                  <li>Kit Astronómico Principiante</li>
+                  <li>Telescopio Computerizado</li>
+                </ul>
+                <a href="#" class="category-link">Ver Categoría →</a>
+              </div>
+      
+              <div class="category-card">
+                <div class="category-icon">🌠</div>
+                <h3>Meteoritos</h3>
+                <p>Fragmentos certificados del espacio</p>
+                <ul class="category-products">
+                  <li>Meteorito Lunar Auténtico</li>
+                  <li>Colección Marte</li>
+                  <li>Tectitas Selectas</li>
+                </ul>
+                <a href="#" class="category-link">Ver Categoría →</a>
+              </div>
+      
+              <div class="category-card">
+                <div class="category-icon">👨‍🚀</div>
+                <h3>Equipamiento</h3>
+                <p>Réplicas y equipo funcional</p>
+                <ul class="category-products">
+                  <li>Traje Espacial Réplica</li>
+                  <li>Guantes NASA</li>
+                  <li>Cascos Espaciales</li>
+                </ul>
+                <a href="#" class="category-link">Ver Categoría →</a>
+              </div>
+            </div>
+          </section>
+      
+          <!-- Ofertas Flash -->
+          <section class="flash-deals">
+            <h2 class="section-title">Ofertas Flash Galácticas</h2>
+            <div class="deals-countdown">
+              <span class="countdown-label">Termina en:</span>
+              <div class="countdown-timer">12:45:30</div>
+            </div>
+            <div class="deals-grid">
+              <div class="deal-card">
+                <span class="discount-badge">-40%</span>
+                <img src="/api/placeholder/200/200" alt="Binoculares Astronómicos" class="deal-image">
+                <h4>Binoculares Astronómicos Pro</h4>
+                <div class="deal-price">
+                  <span class="original-price">$399.99</span>
+                  <span class="current-price">$239.99</span>
+                </div>
+                <div class="stock-indicator">
+                  <div class="stock-bar" style="width: 35%"></div>
+                  <span class="stock-text">¡Solo quedan 7 unidades!</span>
+                </div>
+                <button class="cta-button">Comprar Ahora</button>
+              </div>
+      
+              <div class="deal-card">
+                <span class="discount-badge">-25%</span>
+                <img src="/api/placeholder/200/200" alt="Kit de Meteoritos" class="deal-image">
+                <h4>Kit de Meteoritos Coleccionista</h4>
+                <div class="deal-price">
+                  <span class="original-price">$299.99</span>
+                  <span class="current-price">$224.99</span>
+                </div>
+                <div class="stock-indicator">
+                  <div class="stock-bar" style="width: 60%"></div>
+                  <span class="stock-text">¡Solo quedan 12 unidades!</span>
+                </div>
+                <button class="cta-button">Comprar Ahora</button>
+              </div>
+            </div>
+          </section>
+      
+          <!-- Productos Nuevos -->
+          <section class="new-arrivals">
+            <h2 class="section-title">Recién Llegados</h2>
+            <div class="products-grid">
+              <div class="product-card">
+                <span class="new-badge">Nuevo</span>
+                <img src="/api/placeholder/250/250" alt="Mapa Estelar 3D" class="product-image">
+                <h4>Mapa Estelar 3D Interactivo</h4>
+                <p class="product-description">Explora el universo en 3D con realidad aumentada</p>
+                <div class="product-price">$159.99</div>
+                <button class="cta-button">Añadir al Carrito</button>
+              </div>
+      
+              <div class="product-card">
+                <span class="new-badge">Nuevo</span>
+                <img src="/api/placeholder/250/250" alt="Domo Planetario" class="product-image">
+                <h4>Domo Planetario Portátil</h4>
+                <p class="product-description">Proyecta el universo en tu habitación</p>
+                <div class="product-price">$299.99</div>
+                <button class="cta-button">Añadir al Carrito</button>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+
+    <!-- Características Destacadas -->
+    <section class="features">
+        <div class="feature-card">
+            <i class="feature-icon">🚀</i>
+            <h3>Envío Espacial Rápido</h3>
+            <p>Entrega en 24-48 horas a cualquier parte del mundo</p>
+        </div>
+        <div class="feature-card">
+            <i class="feature-icon">🛡️</i>
+            <h3>Garantía Galáctica</h3>
+            <p>30 días de garantía en todos los productos</p>
+        </div>
+        <div class="feature-card">
+            <i class="feature-icon">💫</i>
+            <h3>Autenticidad Certificada</h3>
+            <p>Todos los productos verificados por expertos</p>
+        </div>
+    </section>
+
+    <!-- Newsletter Espacial -->
+    <section class="space-newsletter">
+        <div class="newsletter-content">
+            <h2>¡Únete a nuestra Misión Espacial!</h2>
+            <p>Recibe las últimas novedades y ofertas exclusivas</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Tu correo espacial" required>
+                <button type="submit">¡Despegar! 🚀</button>
+            </form>
+        </div>
+    </section>
+</main>
+<!-- SECCIÓN VIDEOS -->
+<section id="video-section" class="videos-section">
+   <div>
+       <h1 class="text-stars">Videos Destacados</h1>
+   </div>
+   <div class="videos-container">
+       <iframe width="320" height="222" src="https://www.youtube.com/embed/VjlTHYVLkZw" frameborder="1" allowfullscreen></iframe>
+       <iframe width="320" height="222" src="https://www.youtube.com/embed/aqxpcRod_9k" frameborder="1" allowfullscreen></iframe>
+       <iframe width="320" height="222" src="https://www.youtube.com/embed/1pHfCxuI9MY" frameborder="1" allowfullscreen></iframe>
+      
+   </div>
+</section>
+
+
+<footer class="site-footer">
+    <div class="footer-container">
+        <div class="footer-section">
+            <h4>Información</h4>
+            <p>Explora el espacio y descubre las maravillas del universo en nuestra página web. Mantente informado sobre las últimas noticias y avances en la exploración espacial.</p>
+        </div>
+        <div class="footer-section">
+            <h4>Contacto</h4>
+            <p>Si tienes preguntas o comentarios, no dudes en ponerte en contacto con nosotros a través del siguiente correo electrónico:</p>
+            <a href="mailto:contacto@exploracionespacial.com">contacto@exploracionespacial.com</a>
+        </div>
+        <div class="footer-section">
+            <h4>Redes Sociales</h4>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/astrocelestes"><img src="img/facebook.png" alt="Facebook"></a>
+                <a href="https://twitter.com/ExploracionE"><img src="img/twiter.png" alt="Twitter"></a>
+                <a href="https://www.instagram.com/explore/topics/2325143494388042/exploracion-espacial/?hl=es"><img src="img/instagram.png" alt="Instagram"></a>
+            </div>
+        </div>
+        <div class="footer-section">
+            <h4>Categorías</h4>
+            <ul class="category-list">
+                <li>
+                    <img src="img/planetas-sistema-solar.gif" alt="Sistema Solar">
+                    <a href="sistemasolar.html">Sistema Solar</a>
+                </li>
+                <li>
+                    <img src="img/planetas-sistema-solar2.gif" alt="Galaxias">
+                    <a href="noticias.html">Noticias</a>
+                </li>
+                <li>
+                    <img src="img/planetas-sistema-solar3.gif" alt="Exploración Espacial">
+                    <a href="donaciones.html">Donaciones</a>
+                </li>
+              
+            </ul>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
