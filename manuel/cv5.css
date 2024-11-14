@@ -1,0 +1,243 @@
+/* Estilos generales */
+body {
+  font-family: 'Open Sans', sans-serif;
+  padding: 0 27px;
+  background-color: #2E2E2E;
+  color: #E5E5E5;
+  margin: 0px;
+  background: linear-gradient(to right, #2E2E2E, #606060);
+}
+.email-button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #4CAF50;
+  color: white;
+  text-decoration: none;
+  border-radius: 2px;
+  background: linear-gradient(to right, #4CAF50, #7ca97d);
+}
+
+.email-button2 {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #575757;
+  background: linear-gradient(to right, #787878, #393939);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  border: 2px solid #787878;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  }
+  
+  .email-button2:hover {
+  background-color: #787878;
+  color: #393939;
+  cursor: pointer;
+  }
+  
+  .email-button2:active {
+  transform: scale(0.95);
+  }
+
+/* Estilos para la sección de información personal */
+.personal-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: -30px;
+  text-align: center;
+}
+
+.personal-info img {
+  width: 165px;
+  height: auto;
+  border-radius: 100%;
+  border: solid 2px #555555;
+  margin-left: 140px;
+  margin-top: 30px;
+  margin-bottom: 0px;
+  transition: all 0.8s ease-in-out;
+  float: left;
+}
+.personal-info img:hover{
+  transform: scale(1.05);
+}
+.personal-info .info {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.personal-info .info p {
+  font-size: 18px;
+  margin: 0;
+}
+
+/* Estilos para el título del currículum */
+.title {
+  text-align: center;
+  margin: 12px;
+  font-size: 40px;
+  font-weight: bolder;
+  text-decoration: underline;
+  font-style: italic;
+  font-family: 'Playfair Display';
+  transition: opacity 0.5s ease-out;
+  opacity: 0.55;
+}
+
+.title:hover {
+  opacity: 1.5;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("fonts/PlayfairDisplay-Italic-VariableFont_wght.ttf") format('truetype');
+  font-style: italic;
+}
+
+/* Estilos para la sección de habilidades de programación */
+.skills {
+  text-align: center;
+  background-color: #2E2E2E;
+  padding: 10px;
+  border-radius: 52px;
+  margin: 27px auto;
+  box-shadow: 0 0 20px #828282;
+  transition: all 0.5s ease-in-out;
+  width: 92%;
+  animation: myAnimation 3.5s ease-in-out;
+}
+
+@keyframes myAnimation {
+  0% {
+    transform: scale(0.1);
+    background-color: #c1c1c1;
+  }
+  50% {
+    transform: scale(1.03);
+    background-color: #4b4b4b;
+  }
+  100% {
+    transform: scale(1);
+    background-color: #2E2E2E;
+  }
+}
+
+.skills:hover {
+  animation-play-state:running;
+}
+.skills:hover {
+  transform: scale(1.03);
+}
+.section-title {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* Estilos para las secciones de lenguajes de programación, frameworks y librerías, y herramientas de desarrollo */
+section {
+  margin: 20px 0;
+  text-align: center;
+}
+
+section h3 {
+font-size: 20px;
+}
+
+section ul {
+list-style:none;
+text-align: center;
+margin: 0 auto;
+padding: 0;
+width: 80%;
+}
+
+section li {
+font-size: 18px;
+margin-bottom: 10px;
+}
+
+.skills2 {
+  text-align: center;
+  background-color: #2E2E2E;
+  padding: 10px;
+  border-radius: 52px;
+  margin: 27px auto;
+  box-shadow: 0 0 20px #828282;
+  transition: all 0.5s ease-in-out;
+  width: 25%;
+    
+}
+
+.skills2:hover {
+  transform: scale(1.03);
+}
+.section-title2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  text-align: center;
+}
+
+.section-ul2 {
+list-style:none;
+text-align: center;
+margin: 0 auto;
+padding: 0;
+width: 80%;
+}
+
+section li {
+font-size: 18px;
+margin-bottom: 10px;
+}
+/* Estilos para la sección de carta de presentación */
+.cover-letter {
+color:rgb(171, 208, 196);
+background-color: #686868;
+padding: 20px;
+border-radius: 10px;
+margin: 20px auto;
+font-size: 18px;
+width: 80%;
+text-align: center;
+box-shadow: 0 0 20px #000000;
+transition: all 0.5s ease-in-out;
+}
+.cover-letter:hover {
+transform: scale(1.05);
+}
+.cover-letter h2 {
+font-size: 24px;
+color:rgb(171, 208, 196
+);
+text-align: center;
+}
+
+.cover-letter p {
+text-align: justify;
+margin: 20px auto;
+}
+
+footer {
+  background-color: #2E2E2E;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 5px;
+  position:static;
+  bottom: 0;
+  width: 100%;
+  background: linear-gradient(to right, #2E2E2E, #606060);
+}
+/* Botón de Volver */
+.volver-btn {
+  display: block;
+  margin: 30px auto;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-style: italic;
+  font-family: 'cursive';
+}
