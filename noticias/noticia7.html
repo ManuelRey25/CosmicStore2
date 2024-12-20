@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<script>
+    // Verificar si el contador de visitas existe en el almacenamiento local
+    if (!localStorage.getItem('not7')) {
+        localStorage.setItem('not7', 0);
+    }
+
+    // Incrementar el contador de visitas al cargar la página
+    window.onload = function() {
+        var not7 = parseInt(localStorage.getItem('not7'));
+        not7++;
+        localStorage.setItem('not7', not7);
+        document.getElementById('n7').innerText = not7;
+    };
+</script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revelación cuántica</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../pace.ico">
+</head>
+<body>
+    <header>
+        <nav id='menu'>
+            <ul>
+                <li><a href='index.html'>CosmicStore2</a></li>
+                <li><a href='ofertasespeciales.html' title="Ofertas de la semana">Ofertas Especiales</a></li>
+                <li><a href='tienda.html'>Tienda Espacial</a>
+                  <ul>
+                      <li><a href='efectivo.html'>Envio Pago en Efectivo</a></li>
+                  </ul>
+              </li>
+                <li><a>Sistema Solar</a>
+                    <ul>
+                        <li><a href='sistemasolar.html'>Imagenes</a>
+                            <ul>
+                                <li><a href='sistemasolar.html'>Planetas</a></li>
+                                <li><a href='galaxias.html'>Galaxias</a></li>
+                                <li><a href='hubble.html'>Telescopio Hubble</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='noticias.html'>Noticias</a>
+                            <ul>
+                                <li><a href='noticias.html'>Noticias</a></li>
+                                <li><a href='noticasspacex.html'>Space X</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a>Contenido Adicional</a>
+                    <ul>
+                        <li><a href='comentarios.html' title="Dejanos tus comentarios">Comentarios</a></li>
+                        <li><a href='metodos.html'>Metodos Interactivos</a></li>
+                        <li><a href='resenas-espaciales.html'>Reseñas de seguidores</a></li>
+                    </ul>
+                </li>
+                <li><a title="Conócenos un poco más">Sobre Nosotros</a>
+                    <ul>
+                        <li><a>Desarrollador</a>
+                            <ul>
+                                <li><a href='manuel/index2.html' target="_blank">Manuel</a></li>
+                            </ul>
+                        </li>
+                        <li><a title="Nuestra Misión" href='mision.html'>Nuestra Misión</a></li>
+                        <li><a href='donaciones.html'>Dejanos una donacion</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="logoContainer" class="logo-container">
+                <a href='tienda.html'><img id="logoImage" src="img/logo.jpg" alt="logo"></a>
+            </div>
+        </nav>
+    </header>
+<!-- IMAGEN HEADER QUE YA NO ES HEADER -->
+<section class="imagenheader text-center">
+   <div>
+       
+       <h1 class="h1header text-center">Explora el Espacio con Nosotros</h1>
+       
+       <br></br>
+       <p class="pheader text-center">Bienvenido a la página web sobre la exploración espacial. Descubre las Maravillas del universo.</p>
+   </div>
+</section>
+
+
+<section class="section-1">
+    <div>
+        <div>
+            <img src="../img/simulation.jpg" alt="Noticia 7" class="custom-noticia-img">
+                <div>
+                    <h3>"Revelación cuántica: Científicos Descubren un Planeta Gigante Más Allá de Nuestras Expectativas</h3>
+                    <p>Este coloso planetario redefine lo que creíamos posible en el cosmos, recordándonos humildemente que aún tenemos mucho por descubrir y comprender en nuestra búsqueda de los secretos del universo.</p>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-2">
+    <div>
+        <h2>Revelación Cuántica: Un Asombroso Descubrimiento Planetario que Desafía Nuestras Expectativas</h2>
+        <p>En un emocionante giro de los acontecimientos, un grupo de científicos ha anunciado el descubrimiento de un planeta gigante que desafía todas nuestras expectativas y nos lleva a replantear lo que creíamos saber sobre la formación planetaria. Este hallazgo revolucionario nos recuerda que en el mundo de la ciencia, siempre hay espacio para lo inesperado.</p>
+        <p>El nuevo planeta, bautizado como QuantumX-456b, ha dejado perplejos a los astrónomos debido a su tamaño y características únicas. A pesar de su proximidad a su estrella anfitriona, QuantumX-456b es mucho más grande de lo que los modelos tradicionales de formación planetaria habrían predicho.</p>
+        <h2>Un Desafío a las Teorías Establecidas</h2>
+        <p>La revelación de QuantumX-456b plantea un desafío significativo a nuestras teorías convencionales sobre la formación de planetas. Según las teorías actuales, los planetas gigantes tienden a formarse más lejos de sus estrellas para evitar ser despojados de material por la intensa radiación. Sin embargo, QuantumX-456b desafía esta idea al existir a una distancia inusualmente cercana a su estrella, desafiando las condiciones que creíamos necesarias para su formación.</p>
+        <h2>Un Nuevo Paradigma en Formación Planetaria</h2>
+        <p>Los científicos están emocionados por investigar qué procesos poco convencionales podrían haber contribuido a la formación de QuantumX-456b. Se especula que la interacción con otros planetas en el sistema o fenómenos cuánticos a nivel planetario podrían haber influido en su desarrollo inusual.</p>
+        <p>Este descubrimiento subraya la importancia de mantener la mente abierta en el campo de la astronomía y la astrofísica. La naturaleza sorprendente y en constante evolución del universo nos recuerda que incluso las teorías más sólidas pueden ser desafiadas por fenómenos inesperados, lo que a su vez nos impulsa a expandir y redefinir nuestras ideas sobre cómo se forman y evolucionan los planetas en el vasto cosmos.</p>
+        <h2>Un Nuevo Capítulo en la Exploración Espacial</h2>
+        <p>QuantumX-456b nos brinda una oportunidad única para explorar y comprender más sobre la diversidad y complejidad de los sistemas planetarios. A medida que los científicos estudian este planeta excepcional, es probable que desentrañen nuevos conocimientos sobre las fuerzas y procesos que dan forma a los mundos más allá de nuestro sistema solar.</p>
+        <p>Este emocionante descubrimiento nos recuerda que, incluso en la era moderna de la ciencia, todavía hay mucho por descubrir y entender en el vasto y enigmático cosmos que habitamos.</p>
+    </div>
+</section>
+<p class="contador">Esta noticia la han visto <span id="n7">0</span> veces.</p>
+<a href="../index.html" class="volver-btn">Volver a la página principal</a>
+<a href="../noticias.html" class="volver-btn">Volver a la página de Noticias</a>
+
+
+</body>
+</html>

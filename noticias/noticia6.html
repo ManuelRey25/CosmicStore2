@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        // Verificar si el contador de visitas existe en el almacenamiento local
+        if (!localStorage.getItem('not6')) {
+            localStorage.setItem('not6', 0);
+        }
+        
+        // Incrementar el contador de visitas al cargar la página
+        window.onload = function() {
+            var not6 = parseInt(localStorage.getItem('not6'));
+            not6++;
+            localStorage.setItem('not6', not6);
+            document.getElementById('n6').innerText = not6;
+        };
+        </script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nueva Galaxia</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../pace.ico">
+</head>
+<body>
+    <header>
+        <nav id='menu'>
+            <ul>
+                <li><a href='index.html'>CosmicStore2</a></li>
+                <li><a href='ofertasespeciales.html' title="Ofertas de la semana">Ofertas Especiales</a></li>
+                <li><a href='tienda.html'>Tienda Espacial</a>
+                  <ul>
+                      <li><a href='efectivo.html'>Envio Pago en Efectivo</a></li>
+                  </ul>
+              </li>
+                <li><a>Sistema Solar</a>
+                    <ul>
+                        <li><a href='sistemasolar.html'>Imagenes</a>
+                            <ul>
+                                <li><a href='sistemasolar.html'>Planetas</a></li>
+                                <li><a href='galaxias.html'>Galaxias</a></li>
+                                <li><a href='hubble.html'>Telescopio Hubble</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='noticias.html'>Noticias</a>
+                            <ul>
+                                <li><a href='noticias.html'>Noticias</a></li>
+                                <li><a href='noticasspacex.html'>Space X</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a>Contenido Adicional</a>
+                    <ul>
+                        <li><a href='comentarios.html' title="Dejanos tus comentarios">Comentarios</a></li>
+                        <li><a href='metodos.html'>Metodos Interactivos</a></li>
+                        <li><a href='resenas-espaciales.html'>Reseñas de seguidores</a></li>
+                    </ul>
+                </li>
+                <li><a title="Conócenos un poco más">Sobre Nosotros</a>
+                    <ul>
+                        <li><a>Desarrollador</a>
+                            <ul>
+                                <li><a href='manuel/index2.html' target="_blank">Manuel</a></li>
+                            </ul>
+                        </li>
+                        <li><a title="Nuestra Misión" href='mision.html'>Nuestra Misión</a></li>
+                        <li><a href='donaciones.html'>Dejanos una donacion</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="logoContainer" class="logo-container">
+                <a href='tienda.html'><img id="logoImage" src="img/logo.jpg" alt="logo"></a>
+            </div>
+        </nav>
+    </header>
+<!-- IMAGEN HEADER QUE YA NO ES HEADER -->
+<section class="imagenheader text-center">
+   <div>
+       
+       <h1 class="h1header text-center">Explora el Espacio con Nosotros</h1>
+       
+       <br></br>
+       <p class="pheader text-center">Bienvenido a la página web sobre la exploración espacial. Descubre las Maravillas del universo.</p>
+   </div>
+</section>
+
+
+<section class="section-1">
+    <div>
+        <div>
+            <img src="../img/space5.jpg" alt="Noticia 6" class="custom-noticia-img">
+                <div>
+                    <h3>"Nueva Galaxia"</h3>
+                    <p>En la insondable extensión del cosmos, cada galaxia es un tesoro de incógnitas que espera ser descifrado. A medida que nuestros conocimientos avanzan, también lo hacen las preguntas sobre estas vastas moradas de estrellas. Cada descubrimiento nos acerca a comprender nuestro lugar en el universo y a desentrañar los secretos que yacen entre las estrellas.</p>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-2">
+    <div>
+        <h2>Nueva Galaxia: Un Fascinante Capítulo en la Exploración del Universo</h2>
+        <p>En un emocionante giro de los acontecimientos, los astrónomos han anunciado el descubrimiento de una nueva galaxia en los confines del espacio. Este emocionante hallazgo marca un hito en nuestra comprensión del universo y plantea preguntas intrigantes sobre la naturaleza de las galaxias y su evolución a lo largo del tiempo cósmico.</p>
+        <p>La nueva galaxia, catalogada como NGC-X124, se encuentra a miles de millones de años luz de distancia de la Tierra. Aunque su distancia la hace difícil de estudiar en detalle, los telescopios espaciales y terrestres han proporcionado imágenes sorprendentes que revelan su forma espiral única y su contenido de estrellas brillantes y nebulosas.</p>
+        <h2>Un Vistazo a Nuestro Pasado Cósmico</h2>
+        <p>La observación de esta nueva galaxia nos ofrece una ventana a un pasado remoto en la historia del universo. Debido a la velocidad de la luz y a la inmensa distancia que nos separa de NGC-X124, lo que estamos viendo en realidad es cómo era la galaxia hace miles de millones de años. Esta instantánea cósmica nos permite rastrear la evolución de las galaxias a lo largo de vastos períodos de tiempo y entender cómo han interaccionado y cambiado a lo largo de la historia cósmica.</p>
+        <h2>Los Misterios por Descubrir</h2>
+        <p>Aunque hemos aprendido mucho sobre las galaxias a lo largo de los años, cada nuevo descubrimiento plantea nuevas preguntas. Los astrónomos están ansiosos por investigar la composición química de NGC-X124 y estudiar sus patrones de formación estelar. ¿Cómo se compara con otras galaxias cercanas? ¿Qué fenómenos cósmicos pueden haber moldeado su aspecto actual?</p>
+        <p>La exploración de la nueva galaxia también tiene implicaciones para nuestra comprensión de la expansión del universo y la distribución de la materia en el espacio. Cada galaxia es un rompecabezas en sí misma, y reunir las piezas de este rompecabezas puede proporcionar pistas valiosas sobre la historia y el destino último del cosmos.</p>
+        <h2>Un Futuro de Descubrimientos</h2>
+        <p>El descubrimiento de NGC-X124 es un recordatorio de que el universo aún tiene muchos secretos por revelar. Con cada nuevo avance en la tecnología de observación y exploración espacial, estamos en camino de desvelar más misterios cósmicos y expandir nuestra comprensión del vasto y asombroso cosmos en el que habitamos.</p>
+    </div>
+</section>
+<p class="contador">Esta noticia la han visto <span id="n6">0</span> veces.</p>
+<a href="../index.html" class="volver-btn">Volver a la página principal</a>
+<a href="../noticias.html" class="volver-btn">Volver a la página de Noticias</a>
+
+
+</body>
+</html>

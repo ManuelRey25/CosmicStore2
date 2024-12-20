@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        // Verificar si el contador de visitas existe en el almacenamiento local
+        if (!localStorage.getItem('not2')) {
+            localStorage.setItem('not2', 0);
+        }
+        
+        // Incrementar el contador de visitas al cargar la página
+        window.onload = function() {
+            var not2 = parseInt(localStorage.getItem('not2'));
+            not2++;
+            localStorage.setItem('not2', not2);
+            document.getElementById('n2').innerText = not2;
+        };
+        </script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubrimiento Multiplanetario</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../pace.ico">
+</head>
+<body>
+    <header>
+        <nav id='menu'>
+            <ul>
+                <li><a href='index.html'>CosmicStore2</a></li>
+                <li><a href='ofertasespeciales.html' title="Ofertas de la semana">Ofertas Especiales</a></li>
+                <li><a href='tienda.html'>Tienda Espacial</a>
+                  <ul>
+                      <li><a href='efectivo.html'>Envio Pago en Efectivo</a></li>
+                  </ul>
+              </li>
+                <li><a>Sistema Solar</a>
+                    <ul>
+                        <li><a href='sistemasolar.html'>Imagenes</a>
+                            <ul>
+                                <li><a href='sistemasolar.html'>Planetas</a></li>
+                                <li><a href='galaxias.html'>Galaxias</a></li>
+                                <li><a href='hubble.html'>Telescopio Hubble</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='noticias.html'>Noticias</a>
+                            <ul>
+                                <li><a href='noticias.html'>Noticias</a></li>
+                                <li><a href='noticasspacex.html'>Space X</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a>Contenido Adicional</a>
+                    <ul>
+                        <li><a href='comentarios.html' title="Dejanos tus comentarios">Comentarios</a></li>
+                        <li><a href='metodos.html'>Metodos Interactivos</a></li>
+                        <li><a href='resenas-espaciales.html'>Reseñas de seguidores</a></li>
+                    </ul>
+                </li>
+                <li><a title="Conócenos un poco más">Sobre Nosotros</a>
+                    <ul>
+                        <li><a>Desarrollador</a>
+                            <ul>
+                                <li><a href='manuel/index2.html' target="_blank">Manuel</a></li>
+                            </ul>
+                        </li>
+                        <li><a title="Nuestra Misión" href='mision.html'>Nuestra Misión</a></li>
+                        <li><a href='donaciones.html'>Dejanos una donacion</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="logoContainer" class="logo-container">
+                <a href='tienda.html'><img id="logoImage" src="img/logo.jpg" alt="logo"></a>
+            </div>
+        </nav>
+    </header>
+<!-- IMAGEN HEADER QUE YA NO ES HEADER -->
+<section class="imagenheader text-center">
+   <div>
+       
+       <h1 class="h1header text-center">Explora el Espacio con Nosotros</h1>
+       
+       <br></br>
+       <p class="pheader text-center">Bienvenido a la página web sobre la exploración espacial. Descubre las Maravillas del universo.</p>
+   </div>
+</section>
+
+
+<section class="section-1">
+    <div>
+        <div>
+            <img src="../img/noticias2.jpg" alt="Noticia 2" class="custom-noticia-img">
+                <div>
+                    <h3>"Galaxia Gigante Revela Nuevos Enigmas a los Astrónomos Intrigados"</h3>
+                    <p >En la insondable extensión del cosmos, cada galaxia es un tesoro de incógnitas que espera ser descifrado. A medida que nuestros conocimientos avanzan, también lo hacen las preguntas sobre estas vastas moradas de estrellas.</p>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-2">
+    <div>
+        <h2>Galaxia Gigante Revela Nuevos Enigmas a los Astrónomos Intrigados</h2>
+        <p>En un asombroso descubrimiento astronómico, los científicos han dirigido sus telescopios hacia una galaxia gigante situada a miles de millones de años luz de distancia. Esta galaxia, conocida como "Andromeda Estelar", ha dejado perplejos a los astrónomos al revelar una serie de enigmas nunca antes vistos en una estructura de este tamaño.</p>
+        <p>Andromeda Estelar se destaca por su inmenso tamaño, que abarca una vasta región del espacio cósmico. Los astrónomos han utilizado observaciones de largo alcance y tecnologías avanzadas para estudiar sus detalles, pero cada respuesta desentraña un nuevo misterio intrigante.</p>
+        <h2>Estructuras Inusuales y Colisiones Cósmicas</h2>
+        <p>Una de las características más sorprendentes de esta galaxia es la presencia de estructuras inusuales que desafían las teorías actuales sobre la formación de galaxias. Múltiples brazos espirales se entrelazan en patrones complejos, sugiriendo que interacciones gravitacionales y colisiones cósmicas pueden haber jugado un papel fundamental en la configuración de Andromeda Estelar.</p>
+        <p>Los astrónomos también han observado un número excepcional de supernovas en esta galaxia, lo que plantea preguntas sobre la frecuencia y las condiciones que llevan a tales explosiones estelares. La gran cantidad de supernovas podría estar relacionada con las interacciones gravitacionales en la galaxia, pero la respuesta precisa sigue siendo un enigma.</p>
+        <h2>Misterios en el Núcleo Galáctico</h2>
+        <p>El núcleo de Andromeda Estelar presenta un misterio aún más profundo. Observaciones detalladas han revelado fluctuaciones en la luminosidad y la energía que emana del centro galáctico. Los astrónomos han teorizado sobre la posible presencia de un agujero negro supermasivo en el núcleo, pero los datos actuales no proporcionan una explicación definitiva.</p>
+        <p>La galaxia también exhibe una cantidad inusual de actividad de formación estelar en su núcleo, lo que contradice las expectativas tradicionales sobre las condiciones propicias para la creación de nuevas estrellas. Los astrónomos están ansiosos por descubrir qué procesos únicos están ocurriendo en el núcleo para impulsar esta actividad frenética.</p>
+        <h2>Desafíos para la Comunidad Astronómica</h2>
+        <p>El descubrimiento de Andromeda Estelar plantea desafíos emocionantes y desconcertantes para la comunidad astronómica. Las teorías actuales sobre la formación y evolución de galaxias podrían necesitar revisarse en función de los hallazgos de esta gigantesca estructura cósmica. Los científicos están colaborando en investigaciones adicionales y telescopios más poderosos para arrojar luz sobre los misterios de Andromeda Estelar y, en última instancia, comprender mejor la diversidad de las galaxias en el universo.</p>
+    </div>
+</section>
+<p class="contador">Esta noticia la han visto <span id="n2">0</span> veces.</p>
+<a href="../index.html" class="volver-btn">Volver a la página principal</a>
+<a href="../noticias.html" class="volver-btn">Volver a la página de Noticias</a>
+
+
+</body>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        // Verificar si el contador de visitas existe en el almacenamiento local
+        if (!localStorage.getItem('visitas')) {
+            localStorage.setItem('visitas', 0);
+        }
+        
+        // Incrementar el contador de visitas al cargar la página
+        window.onload = function() {
+            var visitas = parseInt(localStorage.getItem('visitas'));
+            visitas++;
+            localStorage.setItem('visitas', visitas);
+            document.getElementById('contador').innerText = visitas;
+        };
+        </script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubrimiento Multiplanetario</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../pace.ico">
+</head>
+<body>
+    <header>
+        <nav id='menu'>
+            <ul>
+                <li><a href='index.html'>CosmicStore2</a></li>
+                <li><a href='ofertasespeciales.html' title="Ofertas de la semana">Ofertas Especiales</a></li>
+                <li><a href='tienda.html'>Tienda Espacial</a>
+                  <ul>
+                      <li><a href='efectivo.html'>Envio Pago en Efectivo</a></li>
+                  </ul>
+              </li>
+                <li><a>Sistema Solar</a>
+                    <ul>
+                        <li><a href='sistemasolar.html'>Imagenes</a>
+                            <ul>
+                                <li><a href='sistemasolar.html'>Planetas</a></li>
+                                <li><a href='galaxias.html'>Galaxias</a></li>
+                                <li><a href='hubble.html'>Telescopio Hubble</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='noticias.html'>Noticias</a>
+                            <ul>
+                                <li><a href='noticias.html'>Noticias</a></li>
+                                <li><a href='noticasspacex.html'>Space X</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a>Contenido Adicional</a>
+                    <ul>
+                        <li><a href='comentarios.html' title="Dejanos tus comentarios">Comentarios</a></li>
+                        <li><a href='metodos.html'>Metodos Interactivos</a></li>
+                        <li><a href='resenas-espaciales.html'>Reseñas de seguidores</a></li>
+                    </ul>
+                </li>
+                <li><a title="Conócenos un poco más">Sobre Nosotros</a>
+                    <ul>
+                        <li><a>Desarrollador</a>
+                            <ul>
+                                <li><a href='manuel/index2.html' target="_blank">Manuel</a></li>
+                            </ul>
+                        </li>
+                        <li><a title="Nuestra Misión" href='mision.html'>Nuestra Misión</a></li>
+                        <li><a href='donaciones.html'>Dejanos una donacion</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="logoContainer" class="logo-container">
+                <a href='tienda.html'><img id="logoImage" src="img/logo.jpg" alt="logo"></a>
+            </div>
+        </nav>
+    </header>
+<!-- IMAGEN HEADER QUE YA NO ES HEADER -->
+<section class="imagenheader text-center">
+   <div>
+       
+       <h1 class="h1header text-center">Explora el Espacio con Nosotros</h1>
+       
+       <br></br>
+       <p class="pheader text-center">Bienvenido a la página web sobre la exploración espacial. Descubre las Maravillas del universo.</p>
+   </div>
+</section>
+
+
+<section class="section-1">
+    <div>
+        <div>
+            <img src="../img/space1.jpg" alt="Noticia 1" class="custom-noticia-img">
+                <div>
+                    <h3>"Descubrimiento Multiplanetario"</h3>
+                    <p >El descubrimiento multiplanetario ilumina la riqueza de sistemas solares más allá del nuestro, recordándonos que la exploración del espacio continúa revelando maravillas sorprendentes y desafiantes para nuestra comprensión de la vida y la formación planetaria.</p>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-2">
+    <div>
+        <h2>Un Nuevo Sistema Solar Descubierto</h2>
+        <p>En un emocionante avance en la exploración espacial, los científicos han anunciado el descubrimiento de un nuevo sistema solar que alberga múltiples planetas. Este hallazgo fascinante ha sido posible gracias al uso de telescopios avanzados y técnicas de detección de planetas.</p>
+        <p>El sistema solar recién descubierto contiene al menos cinco planetas, cada uno con características únicas. Algunos de estos mundos distantes son similares en tamaño y composición a la Tierra, lo que ha llevado a la especulación sobre la posibilidad de que puedan albergar condiciones propicias para la vida.</p>
+        <h2>Desafíos y Preguntas Abiertas</h2>
+        <p>Aunque el descubrimiento es emocionante, también plantea numerosos desafíos y preguntas para los astrónomos. La distancia entre nuestro planeta y este nuevo sistema solar es inmensa, lo que dificulta la recopilación de datos detallados. Los científicos están trabajando en formas de obtener más información sobre estos planetas y su composición atmosférica.</p>
+        <p>Además, el descubrimiento de múltiples planetas en este sistema solar plantea cuestiones sobre su formación y evolución. Los modelos actuales de formación planetaria pueden necesitar ser revisados para explicar la presencia de tantos cuerpos planetarios en una misma región del espacio.</p>
+        <h2>Impacto en la Búsqueda de Vida Extraterrestre</h2>
+        <p>Uno de los aspectos más emocionantes de este descubrimiento es su impacto en la búsqueda de vida extraterrestre. Los planetas que se asemejan a la Tierra en tamaño y composición son de particular interés, ya que podrían tener las condiciones adecuadas para sustentar formas de vida.</p>
+        <p>Los científicos esperan utilizar futuros telescopios espaciales y tecnologías avanzadas para analizar las atmósferas de estos planetas en busca de señales de gases asociados con la actividad biológica. Si se encuentran indicios prometedores, podría ser un paso importante en la búsqueda de vida más allá de nuestro propio planeta.</p>
+    </div>
+</section>
+<p class="contador">Esta noticia la han visto <span id="contador">0</span> veces.</p>
+<a href="../index.html" class="volver-btn">Volver a la página principal</a>
+<a href="../noticias.html" class="volver-btn">Volver a la página de Noticias</a>
+
+
+</body>
+</html>
