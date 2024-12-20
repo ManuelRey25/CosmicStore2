@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exploración Espacial</title>
+	<link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/pace.ico">
+</head>
+<body>
+    <header>
+        <nav id='menu'>
+            <ul>
+                <li><a href='index.html'>CosmicStore2</a></li>
+                <li><a href='ofertasespeciales.html' title="Ofertas de la semana">Ofertas Especiales</a></li>
+                <li><a href='tienda.html'>Tienda Espacial</a>
+                  <ul>
+                      <li><a href='efectivo.html'>Envio Pago en Efectivo</a></li>
+                  </ul>
+              </li>
+                <li><a>Sistema Solar</a>
+                    <ul>
+                        <li><a href='sistemasolar.html'>Imagenes</a>
+                            <ul>
+                                <li><a href='sistemasolar.html'>Planetas</a></li>
+                                <li><a href='galaxias.html'>Galaxias</a></li>
+                                <li><a href='hubble.html'>Telescopio Hubble</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='noticias.html'>Noticias</a>
+                            <ul>
+                                <li><a href='noticias.html'>Noticias</a></li>
+                                <li><a href='noticasspacex.html'>Space X</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a>Contenido Adicional</a>
+                    <ul>
+                        <li><a href='comentarios.html' title="Dejanos tus comentarios">Comentarios</a></li>
+                        <li><a href='metodos.html'>Metodos Interactivos</a></li>
+                        <li><a href='resenas-espaciales.html'>Reseñas de seguidores</a></li>
+                    </ul>
+                </li>
+                <li><a title="Conócenos un poco más">Sobre Nosotros</a>
+                    <ul>
+                        <li><a>Desarrollador</a>
+                            <ul>
+                                <li><a href='manuel/index2.html' target="_blank">Manuel</a></li>
+                            </ul>
+                        </li>
+                        <li><a title="Nuestra Misión" href='mision.html'>Nuestra Misión</a></li>
+                        <li><a href='donaciones.html'>Dejanos una donacion</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="logoContainer" class="logo-container">
+                <a href='tienda.html'><img id="logoImage" src="img/logo.jpg" alt="logo"></a>
+            </div>
+        </nav>
+    </header>
+    <!-- IMAGEN HEADER QUE YA NO ES HEADER -->
+    <section class="imagenheader text-center">
+       <div>    
+               <br></br><br></br>
+           <p class="pheader text-center">Bienvenido a CosmicStore2. Descubre las Maravillas de nuestro universo.</p>
+       </div>
+    </section>
+    <main>
+        
+        <section class="featured-products">
+            <h2 class="text-stars">Productos Destacados del Universo</h2>
+            <div class="product-grid"></div>
+        </section>
+
+        
+        <section class="shopping-cart">
+            <h2 class="filter-btn">Carrito de Compras</h2>
+            <div class="carrito-container">
+                <p>No hay productos en el carrito</p>
+            </div>
+        </section>
+        <button class="botonapi" id="boton-comprar-principal">Comprar</button>
+        
+        
+        <div id="product-details" class="product-grid" style="display: none;">
+            <button id="close-details">Cerrar</button>
+            <img id="details-image" src="" alt="">
+            <p id="details-description"></p>
+        </div>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Información</h4>
+                <p>Explora el espacio y descubre las maravillas del universo en nuestra página web. Mantente informado sobre las últimas noticias y avances en la exploración espacial.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contacto</h4>
+                <p>Si tienes preguntas o comentarios, no dudes en ponerte en contacto con nosotros a través del siguiente correo electrónico:</p>
+                <p><a href="mailto:contacto@exploracionespacial.com">contacto@exploracionespacial.com</a></p>
+            </div>
+            <div class="footer-section">
+                <h4>Redes Sociales</h4>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/astrocelestes"><img src="img/facebook.png" alt="Facebook"></a>
+                    <a href="https://twitter.com/ExploracionE"><img src="img/twiter.png" alt="Twitter"></a>
+                    <a href="https://www.instagram.com/explore/topics/2325143494388042/exploracion-espacial/?hl=es"><img src="img/instagram.png" alt="Instagram"></a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h4>Categorías</h45>
+                <ul class="category-list">
+                    <li><img src="img/planetas-sistema-solar.gif" alt="Sistema Solar"> <a href="sistemasolar.html">Sistema Solar</a></li>
+                    <li><img src="img/planetas-sistema-solar2.gif" alt="Galaxias"> <a href="noticias.html">Noticias</a></li>
+                    <li><img src="img/planetas-sistema-solar3.gif" alt="Exploración Espacial"> <a href="donaciones.html">Donaciones</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+</html>

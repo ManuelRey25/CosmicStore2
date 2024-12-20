@@ -1,0 +1,419 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #e74c3c;
+    --background-color: #f5f6fa;
+    --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --transition-speed: 0.3s;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*BODY*/
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    font-family: Verdana, 'Lucida Grande';
+    text-align: center;
+    font-size: 16px;
+  }
+
+header {
+    background-color: #000000;
+    border-bottom: 1px solid #444;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+
+/* Botones modificados de Volver */
+.volver-btn {
+    display: inline-block;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-style: italic;
+    font-family: 'cursive';
+  }
+
+#astronomy-shop {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.card {
+    background: white;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: transform var(--transition-speed);
+    box-shadow: var(--card-shadow);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 1.5rem;
+}
+
+.card h3 {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+
+.card p {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.price {
+    font-size: 1.5rem;
+    color: var(--accent-color);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.quantity-btn {
+    background: var(--secondary-color);
+    color: white;
+    border: none;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color var(--transition-speed);
+}
+
+.quantity-btn:hover {
+    background: var(--primary-color);
+}
+
+.quantity-display {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.cart-summary {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 2rem;
+}
+
+.cart-summary h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.cart-total {
+    font-size: 2rem;
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.customer-info {
+    background: white;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 2rem;
+}
+
+.input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 2px solid #eee;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color var(--transition-speed);
+}
+
+.input:focus {
+    outline: none;
+    border-color: var(--secondary-color);
+}
+
+.btn {
+    background: var(--accent-color);
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color var(--transition-speed);
+}
+
+.btn:hover {
+    background: #c0392b;
+}
+
+@media (max-width: 768px) {
+    .products-grid {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    .card-content {
+        padding: 1rem;
+    }
+}
+
+
+
+
+
+/* MENU */
+#menu ul, #menu li, #menu a {margin: 0;padding: 0;}
+#menu ul {list-style: none;}
+#menu a {text-decoration: none;}
+#menu {
+  height: 42px;
+  background-color: rgba(16, 16, 255, 0.6);
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.6);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transition: transform 0.3s; 
+}
+#menu:hover {
+  transform: scale(1.02); 
+}
+
+#menu > ul > li {
+  float: left;
+  margin-left: 15px;
+  position: relative;
+}
+#menu > ul > li > a {
+  color: #000000;
+  font-size: 17px;
+  line-height: 40px;
+  padding: 11px 20px;
+  -webkit-transition: color .15s;
+  -moz-transition: color .15s;
+  -ms-transition: color .15s;
+  -o-transition: color .15s;
+  transition: color .15s;
+}
+#menu > ul > li > a:hover {color: #009127;}
+#menu > ul > li > ul {
+  opacity: 0;
+  visibility: hidden;
+  padding: 16px 0 20px 0;
+  background-color: #009127;
+  text-align: left;
+  position: absolute;
+  top: 25px;
+  left: 50%;
+  margin-left: -90px;
+  width: 180px;
+  -webkit-transition: all .3s .1s;
+  -moz-transition: all .3s .1s;
+  -o-transition: all .3s .1s;
+  transition: all .3s .1s;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+#menu > ul > li:hover > ul {
+  opacity: 1;
+  top: 42px;
+  visibility: visible;
+}
+#menu > ul > li > ul:before {
+  content: '';
+  display: block;
+  border-color: transparent transparent #360206 transparent;
+  border-style: solid;
+  border-width: 10px;
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  margin-left: -10px;
+}
+#menu > ul ul > li {position: relative;}
+#menu ul ul a {
+  color: #000000;
+  font-size: 13px;
+  background-color: #44b54d;
+  padding: 5px 8px 7px 16px;
+  display: block;
+  -webkit-transition: background-color 0.1s;
+  -moz-transition: background-color 0.1s;
+  -ms-transition: background-color 0.1s;
+  -o-transition: background-color 0.1s;
+  transition: background-color 0.1s;
+}
+#menu > ul > li > ul > li > ul:before {
+  content: '';
+  display: block;
+  border-color: transparent #360206 transparent transparent;
+  border-style: solid;
+  border-width: 10px;
+  position: absolute;
+  top: 23%;
+  left: -20px;
+}
+#menu ul ul ul {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: -16px;
+  left: 206px;
+  padding: 16px 0 20px 0;
+  background-color: rgba(16, 16, 255, 0.6);
+  text-align: left;
+  width: 180px;
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -o-transition: all .3s;
+  transition: all .3s;
+  border-radius: 5px;
+  -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4);
+}
+#menu ul ul > li:hover > ul {
+  opacity: 1;
+  left: 200px;
+  visibility: visible;
+}
+#menu ul ul a:hover {
+  background-color:rgba(16, 16, 255, 0.6);
+  color: #f0f0f0;
+}
+/* LOGO MENU */
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-left: auto;
+}
+
+.logo-container img {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 100px;
+  margin-top: 50px;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.logo-container img:hover {
+  animation: blink 0.5s infinite alternate;
+}
+.logo-hidden {
+  display: none;
+}
+
+@keyframes blink {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+
+
+
+/* IMAGEN HEADER QUE YA NO ES HEADER*/
+
+.imagenheader {
+    background-image: url('img/space-background.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #000000;
+    padding: 100px 0;
+    text-align: center;
+    position: relative;
+    width: 100%; 
+    left: 0; 
+  }
+  .h1header {
+      font-size: 38px; 
+      color: #ffffff;
+      margin: 0;
+      display: block;
+      float: none;
+      position: absolute;
+      top: 40%; 
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-style: italic; 
+      font-family: 'cursive'; 
+  }
+  
+  .pheader {
+    font-size: 17px;
+    color: #ffffff;
+    margin: 0;
+    display: block;
+    float: none;
+    position: absolute;
+    top: 63%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-style: italic;
+    font-family: 'Arial', sans-serif;
+    opacity: 0; 
+    animation: fadeIn 3s ease-in-out infinite; 
+  }
+  
+  @keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+  }
+  

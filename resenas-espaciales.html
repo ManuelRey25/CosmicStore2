@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exploración Espacial</title>
+	<link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/pace.ico">
+</head>
+<body>
+    <header>
+        <nav id='menu'>
+            <ul>
+                <li><a href='index.html'>CosmicStore2</a></li>
+                <li><a href='ofertasespeciales.html' title="Ofertas de la semana">Ofertas Especiales</a></li>
+                <li><a href='tienda.html'>Tienda Espacial</a>
+                  <ul>
+                      <li><a href='efectivo.html'>Envio Pago en Efectivo</a></li>
+                  </ul>
+              </li>
+                <li><a>Sistema Solar</a>
+                    <ul>
+                        <li><a href='sistemasolar.html'>Imagenes</a>
+                            <ul>
+                                <li><a href='sistemasolar.html'>Planetas</a></li>
+                                <li><a href='galaxias.html'>Galaxias</a></li>
+                                <li><a href='hubble.html'>Telescopio Hubble</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='noticias.html'>Noticias</a>
+                            <ul>
+                                <li><a href='noticias.html'>Noticias</a></li>
+                                <li><a href='noticasspacex.html'>Space X</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a>Contenido Adicional</a>
+                    <ul>
+                        <li><a href='comentarios.html' title="Dejanos tus comentarios">Comentarios</a></li>
+                        <li><a href='metodos.html'>Metodos Interactivos</a></li>
+                        <li><a href='resenas-espaciales.html'>Reseñas de seguidores</a></li>
+                    </ul>
+                </li>
+                <li><a title="Conócenos un poco más">Sobre Nosotros</a>
+                    <ul>
+                        <li><a>Desarrollador</a>
+                            <ul>
+                                <li><a href='manuel/index2.html' target="_blank">Manuel</a></li>
+                            </ul>
+                        </li>
+                        <li><a title="Nuestra Misión" href='mision.html'>Nuestra Misión</a></li>
+                        <li><a href='donaciones.html'>Dejanos una donacion</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="logoContainer" class="logo-container">
+                <a href='tienda.html'><img id="logoImage" src="img/logo.jpg" alt="logo"></a>
+            </div>
+        </nav>
+    </header>
+<!-- IMAGEN HEADER QUE YA NO ES HEADER -->
+<section class="imagenheader text-center">
+   <div>    
+           <br></br><br></br>
+       <p class="pheader text-center">Bienvenido a CosmicStore2. Descubre las Maravillas de nuestro universo.</p>
+   </div>
+</section>
+    <main role="main">
+        <section class="hero">
+            <h1 class="hnoticias">Reseñas de Productos</h1>
+            <p class="volver-btn">Experiencias de nuestros exploradores espaciales</p>
+        </section>
+
+        <section id="resenas">
+            <div class="resenas-filter">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="telescopios">Telescopios</button>
+                <button class="filter-btn" data-filter="accesorios">Accesorios</button>
+                <button class="filter-btn" data-filter="libros">Libros</button>
+            </div>
+
+            <div class="resenas-grid">
+                <div class="resena-card">
+                    <div class="resena-header">
+                        <img src="img/telescopio5.jpg" alt="Usuario" class="user-avatar">
+                        <div class="user-info">
+                            <h3>María González</h3>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <img src="img/space-background.jpg" alt="Telescopio" class="producto-imagen">
+                        <span class="producto-nombre">Telescopio Astronómico Profesional</span>
+                    </div>
+                    <p class="resena-texto">
+                        Increíble telescopio, la calidad de imagen es excepcional. He podido observar
+                        los anillos de Saturno con gran detalle. La configuración inicial requiere algo
+                        de paciencia, pero vale totalmente la pena.
+                    </p>
+                    <div class="resena-fecha">Publicado: 15 Oct 2023</div>
+                </div>
+
+                <div class="resena-card">
+                    <div class="resena-header">
+                        <img src="/api/placeholder/80/80" alt="Usuario" class="user-avatar">
+                        <div class="user-info">
+                            <h3>Carlos Martínez</h3>
+                            <div class="stars">★★★★☆</div>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <img src="img/space-background.jpg" alt="Kit Astronomía" class="producto-imagen">
+                        <span class="producto-nombre">Kit de Astronomía Principiantes</span>
+                    </div>
+                    <p class="resena-texto">
+                        Excelente kit para iniciarse en la astronomía. Los materiales son de buena
+                        calidad y el manual es muy completo. Ideal para compartir con los niños.
+                    </p>
+                    <div class="resena-fecha">Publicado: 20 Oct 2023</div>
+                </div>
+
+                <div class="resena-card">
+                    <div class="resena-header">
+                        <img src="/api/placeholder/80/80" alt="Usuario" class="user-avatar">
+                        <div class="user-info">
+                            <h3>Ana Rodríguez</h3>
+                            <div class="stars">★★★★★</div>
+                        </div>
+                    </div>
+                    <div class="producto-info">
+                        <img src="img/space-background.jpg" alt="Meteorito" class="producto-imagen">
+                        <span class="producto-nombre">Fragmento de Meteorito Certificado</span>
+                    </div>
+                    <p class="resena-texto">
+                        Una pieza única y fascinante. Viene con toda la documentación que certifica
+                        su autenticidad. Un tesoro para cualquier coleccionista.
+                    </p>
+                    <div class="resena-fecha">Publicado: 25 Oct 2023</div>
+                </div>
+            </div>
+
+            <div class="escribir-resena">
+                <h2>¿Compraste alguno de nuestros productos?</h2>
+                <button class="boton-escribir-resena">Escribe tu reseña</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
