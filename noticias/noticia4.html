@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        // Verificar si el contador de visitas existe en el almacenamiento local
+        if (!localStorage.getItem('not4')) {
+            localStorage.setItem('not4', 0);
+        }
+        
+        // Incrementar el contador de visitas al cargar la página
+        window.onload = function() {
+            var not4 = parseInt(localStorage.getItem('not4'));
+            not4++;
+            localStorage.setItem('not4', not4);
+            document.getElementById('n4').innerText = not4;
+        };
+        </script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploración Estelar</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../pace.ico">
+</head>
+<body>
+    <header>
+        <nav id='menu'>
+            <ul>
+                <li><a href='../index.html'>CosmicStore2</a></li>
+                <li><a href='../ofertasespeciales.html' title="Ofertas de la semana">Ofertas Especiales</a></li>
+                <li><a href='../tienda.html'>Tienda Espacial</a>
+                  <ul>
+                      <li><a href='../efectivo.html'>Envio Pago en Efectivo</a></li>
+                  </ul>
+              </li>
+                <li><a>Sistema Solar</a>
+                    <ul>
+                        <li><a href='../sistemasolar.html'>Imagenes</a>
+                            <ul>
+                                <li><a href='../sistemasolar.html'>Planetas</a></li>
+                                <li><a href='../galaxias.html'>Galaxias</a></li>
+                                <li><a href='../hubble.html'>Telescopio Hubble</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='../noticias.html'>Noticias</a>
+                            <ul>
+                                <li><a href='../noticias.html'>Noticias</a></li>
+                                <li><a href='../noticasspacex.html'>Space X</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a>Contenido Adicional</a>
+                    <ul>
+                        <li><a href='../comentarios.html' title="Dejanos tus comentarios">Comentarios</a></li>
+                        <li><a href='../metodos.html'>Metodos Interactivos</a></li>
+                        <li><a href='../resenas-espaciales.html'>Reseñas de seguidores</a></li>
+                    </ul>
+                </li>
+                <li><a title="Conócenos un poco más">Sobre Nosotros</a>
+                    <ul>
+                        <li><a>Desarrollador</a>
+                            <ul>
+                                <li><a href='../manuel/index2.html' target="_blank">Manuel</a></li>
+                            </ul>
+                        </li>
+                        <li><a title="Nuestra Misión" href='../mision.html'>Nuestra Misión</a></li>
+                        <li><a href='../donaciones.html'>Dejanos una donacion</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="logoContainer" class="logo-container">
+                <a href='../tienda.html'><img id="logoImage" src="../img/logo.jpg" alt="logo"></a>
+            </div>
+        </nav>
+    </header>
+<!-- IMAGEN HEADER QUE YA NO ES HEADER -->
+<section class="imagenheader text-center">
+   <div>
+       
+       <h1 class="h1header text-center">Explora el Espacio con Nosotros</h1>
+       
+       <br></br>
+       <p class="pheader text-center">Bienvenido a la página web sobre la exploración espacial. Descubre las Maravillas del universo.</p>
+   </div>
+</section>
+
+
+<section class="section-1">
+    <div>
+        <div>
+            <img src="../img/space3.jpg" alt="Noticia 3" class="custom-noticia-img">
+                <div>
+                    <h3>"Exploración Estelar: Fascinantes Hallazgos en la Búsqueda de Planetas Extrasolares"</h3>
+                    <p>Los planetas extrasolares continúan intrigándonos, prometiendo revelaciones sobre la posibilidad de vida más allá de nuestras fronteras planetarias y expandiendo los límites de nuestra exploración cósmica.</p>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-2">
+    <div>
+        <h2>Exploración Estelar: Fascinantes Hallazgos en la Búsqueda de Planetas Extrasolares</h2>
+        <p>La exploración del espacio exterior ha dado lugar a uno de los campos más emocionantes y dinámicos de la investigación científica: la búsqueda de planetas extrasolares, también conocidos como exoplanetas. En los últimos años, los astrónomos han logrado avances asombrosos en la detección y caracterización de estos mundos distantes, revelando una sorprendente diversidad y desafiando nuestras concepciones sobre la formación y evolución planetaria.</p>
+        <p>Uno de los logros más notables en esta área es el descubrimiento de una amplia gama de exoplanetas con características únicas. Algunos de ellos son gigantes gaseosos similares a Júpiter, mientras que otros son mundos rocosos que podrían tener condiciones propicias para la vida. Estos hallazgos han estimulado la imaginación de científicos y entusiastas por igual, ya que nos acercan a responder una de las preguntas más apasionantes: ¿estamos solos en el universo?</p>
+        <h2>El Método de Tránsito y Otros Enfoques</h2>
+        <p>Una de las técnicas clave para detectar exoplanetas es el método de tránsito. Este método implica observar el brillo de una estrella y detectar pequeñas disminuciones periódicas en su luz causadas por un planeta que pasa frente a ella. Estas "eclipses" planetarias proporcionan pistas cruciales sobre el tamaño, la órbita y la composición de los exoplanetas. Además del método de tránsito, los astrónomos también utilizan técnicas de velocidad radial y observación directa para identificar y estudiar exoplanetas.</p>
+        <h2>Descubrimientos Notables</h2>
+        <p>Entre los descubrimientos más notables se encuentra la identificación de exoplanetas en la "zona habitable" de sus estrellas, donde las condiciones podrían ser adecuadas para la existencia de agua líquida y, potencialmente, vida. Además, los telescopios espaciales han permitido analizar las atmósferas de algunos exoplanetas, revelando pistas sobre su composición y posibles procesos atmosféricos.</p>
+        <p>La diversidad de exoplanetas también ha planteado preguntas intrigantes sobre su formación y evolución. Algunos sistemas planetarios son radicalmente diferentes de nuestro propio sistema solar, desafiando las teorías tradicionales sobre cómo se forman los planetas.</p>
+        <h2>El Futuro de la Exploración de Exoplanetas</h2>
+        <p>A medida que avanzamos en la búsqueda de planetas extrasolares, los científicos anticipan descubrimientos aún más emocionantes. Nuevas misiones y tecnologías, como el telescopio espacial James Webb, prometen revelar detalles más precisos sobre las atmósferas y características de los exoplanetas.</p>
+        <p>La exploración estelar y la búsqueda de planetas extrasolares no solo expanden nuestro conocimiento del cosmos, sino que también nos inspiran a reflexionar sobre nuestro lugar en el universo y las posibilidades de vida más allá de la Tierra. Cada nuevo exoplaneta descubierto es un paso hacia la comprensión de la diversidad cósmica y la respuesta a la eterna pregunta: ¿hay otros mundos habitados ahí fuera?</p>
+    </div>
+</section>
+<p class="contador">Esta noticia la han visto <span id="n4">0</span> veces.</p>
+<a href="../index.html" class="volver-btn">Volver a la página principal</a>
+<a href="../noticias.html" class="volver-btn">Volver a la página de Noticias</a>
+
+
+</body>
+</html>

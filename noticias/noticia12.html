@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<script>
+    // Verificar si el contador de visitas existe en el almacenamiento local
+    if (!localStorage.getItem('not14')) {
+        localStorage.setItem('not14', 0);
+    }
+    
+    // Incrementar el contador de visitas al cargar la página
+    window.onload = function() {
+        var not14 = parseInt(localStorage.getItem('not14'));
+        not14++;
+        localStorage.setItem('not14', not14);
+        document.getElementById('n14').innerText = not14;
+    };
+    </script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubrimiento Multiplanetario</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../pace.ico">
+</head>
+<body>
+    <header>
+        <nav id='menu'>
+            <ul>
+                <li><a href='../index.html'>CosmicStore2</a></li>
+                <li><a href='../ofertasespeciales.html' title="Ofertas de la semana">Ofertas Especiales</a></li>
+                <li><a href='../tienda.html'>Tienda Espacial</a>
+                  <ul>
+                      <li><a href='../efectivo.html'>Envio Pago en Efectivo</a></li>
+                  </ul>
+              </li>
+                <li><a>Sistema Solar</a>
+                    <ul>
+                        <li><a href='../sistemasolar.html'>Imagenes</a>
+                            <ul>
+                                <li><a href='../sistemasolar.html'>Planetas</a></li>
+                                <li><a href='../galaxias.html'>Galaxias</a></li>
+                                <li><a href='../hubble.html'>Telescopio Hubble</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='../noticias.html'>Noticias</a>
+                            <ul>
+                                <li><a href='../noticias.html'>Noticias</a></li>
+                                <li><a href='../noticasspacex.html'>Space X</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a>Contenido Adicional</a>
+                    <ul>
+                        <li><a href='../comentarios.html' title="Dejanos tus comentarios">Comentarios</a></li>
+                        <li><a href='../metodos.html'>Metodos Interactivos</a></li>
+                        <li><a href='../resenas-espaciales.html'>Reseñas de seguidores</a></li>
+                    </ul>
+                </li>
+                <li><a title="Conócenos un poco más">Sobre Nosotros</a>
+                    <ul>
+                        <li><a>Desarrollador</a>
+                            <ul>
+                                <li><a href='../manuel/index2.html' target="_blank">Manuel</a></li>
+                            </ul>
+                        </li>
+                        <li><a title="Nuestra Misión" href='../mision.html'>Nuestra Misión</a></li>
+                        <li><a href='../donaciones.html'>Dejanos una donacion</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="logoContainer" class="logo-container">
+                <a href='../tienda.html'><img id="logoImage" src="../img/logo.jpg" alt="logo"></a>
+            </div>
+        </nav>
+    </header>
+<!-- IMAGEN HEADER QUE YA NO ES HEADER -->
+<section class="imagenheader text-center">
+   <div>
+       
+       <h1 class="h1header text-center">Explora el Espacio con Nosotros</h1>
+       
+       <br></br>
+       <p class="pheader text-center">Bienvenido a la página web sobre la exploración espacial. Descubre las Maravillas del universo.</p>
+   </div>
+</section>
+
+
+<section class="section-1">
+    <div>
+        <div>
+            <img src="../img/spacex4.jpg" alt="Noticia 1" class="custom-noticia-img">
+                <div>
+                    <h3>"Stsarship Super Heavy Booster N25"</h3>
+                    <p >SpaceX se embarca en una nueva misión a Marte en busca de respuestas sobre la vida en otros planetas.</p>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-2">
+    <div>
+        <h2>"SpaceX se embarca en una nueva misión a Marte en busca de respuestas sobre la vida en otros planetas"</h2>
+        <p>SpaceX, la innovadora empresa de exploración espacial liderada por Elon Musk, ha anunciado una emocionante misión a Marte con el objetivo de buscar respuestas sobre la vida en otros planetas. Este ambicioso proyecto marca un hito en la investigación espacial y sus posibles implicaciones son enormes.</p>
+        <p>La misión, programada para partir en los próximos meses, se enfocará en explorar Marte desde una perspectiva única. SpaceX enviará una nave espacial equipada con instrumentos de última generación y un equipo de científicos altamente calificados.</p>
+        <h2>En Busca de Indicios de Vida</h2>
+        <p>El principal objetivo de esta misión es buscar evidencia de vida en Marte o, al menos, las condiciones que podrían haber permitido la existencia de vida en el pasado o en el presente. Los científicos examinarán la geología, la composición atmosférica y la presencia de agua en el Planeta Rojo en su búsqueda de respuestas.</p>
+        <h2>Tecnología de Vanguardia</h2>
+        <p>La misión de SpaceX hará uso de tecnología de vanguardia para llevar a cabo análisis detallados y recopilar datos esenciales para la investigación científica. La innovación tecnológica desempeñará un papel fundamental en el éxito de esta importante empresa espacial.</p>
+        <h2>Un Salto en la Búsqueda de Vida en el Espacio</h2>
+        <p>La nueva misión de SpaceX representa un salto significativo en la búsqueda de respuestas sobre la vida en otros planetas. Si se logra descubrir indicios de vida o condiciones propicias para ella en Marte, podría tener un impacto profundo en nuestra comprensión del universo y en la posibilidad de encontrar vida en otros lugares del cosmos. Este es un emocionante momento para la exploración espacial y la ciencia en general.</p>
+    </div>
+    </div>
+</section>
+<p class="contador">Esta noticia la han visto <span id="n14">0</span> veces.</p>
+<a href="../index.html" class="volver-btn">Volver a la página principal</a>
+<a href="../noticasspacex.html" class="volver-btn">Volver a la página de Noticias SpaceX</a>
+
+
+</body>
+</html>

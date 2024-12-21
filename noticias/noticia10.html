@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<script>
+    // Verificar si el contador de visitas existe en el almacenamiento local
+    if (!localStorage.getItem('not11')) {
+        localStorage.setItem('not11', 0);
+    }
+    
+    // Incrementar el contador de visitas al cargar la página
+    window.onload = function() {
+        var not11 = parseInt(localStorage.getItem('not11'));
+        not11++;
+        localStorage.setItem('not11', not11);
+        document.getElementById('n11').innerText = not11;
+    };
+    </script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descubrimiento Multiplanetario</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../pace.ico">
+</head>
+<body>
+    <header>
+        <nav id='menu'>
+            <ul>
+                <li><a href='../index.html'>CosmicStore2</a></li>
+                <li><a href='../ofertasespeciales.html' title="Ofertas de la semana">Ofertas Especiales</a></li>
+                <li><a href='../tienda.html'>Tienda Espacial</a>
+                  <ul>
+                      <li><a href='../efectivo.html'>Envio Pago en Efectivo</a></li>
+                  </ul>
+              </li>
+                <li><a>Sistema Solar</a>
+                    <ul>
+                        <li><a href='../sistemasolar.html'>Imagenes</a>
+                            <ul>
+                                <li><a href='../sistemasolar.html'>Planetas</a></li>
+                                <li><a href='../galaxias.html'>Galaxias</a></li>
+                                <li><a href='../hubble.html'>Telescopio Hubble</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='../noticias.html'>Noticias</a>
+                            <ul>
+                                <li><a href='../noticias.html'>Noticias</a></li>
+                                <li><a href='../noticasspacex.html'>Space X</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a>Contenido Adicional</a>
+                    <ul>
+                        <li><a href='../comentarios.html' title="Dejanos tus comentarios">Comentarios</a></li>
+                        <li><a href='../metodos.html'>Metodos Interactivos</a></li>
+                        <li><a href='../resenas-espaciales.html'>Reseñas de seguidores</a></li>
+                    </ul>
+                </li>
+                <li><a title="Conócenos un poco más">Sobre Nosotros</a>
+                    <ul>
+                        <li><a>Desarrollador</a>
+                            <ul>
+                                <li><a href='../manuel/index2.html' target="_blank">Manuel</a></li>
+                            </ul>
+                        </li>
+                        <li><a title="Nuestra Misión" href='../mision.html'>Nuestra Misión</a></li>
+                        <li><a href='../donaciones.html'>Dejanos una donacion</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="logoContainer" class="logo-container">
+                <a href='../tienda.html'><img id="logoImage" src="../img/logo.jpg" alt="logo"></a>
+            </div>
+        </nav>
+    </header>
+<!-- IMAGEN HEADER QUE YA NO ES HEADER -->
+<section class="imagenheader text-center">
+   <div>
+       
+       <h1 class="h1header text-center">Explora el Espacio con Nosotros</h1>
+       
+       <br></br>
+       <p class="pheader text-center">Bienvenido a la página web sobre la exploración espacial. Descubre las Maravillas del universo.</p>
+   </div>
+</section>
+
+
+<section class="section-1">
+    <div>
+        <div>
+            <img src="../img/spacex2.jpg" alt="Noticia 2" class="custom-noticia-img">
+                <div>
+                    <h3>"Nueva Misión de SpaceX a Marte"</h3>
+                    <p >SpaceX se embarca en una nueva misión a Marte en busca de respuestas sobre la vida en otros planetas.</p>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-2">
+    <div>
+        <h2>"Nueva Misión de SpaceX a Marte"</h2>
+        <p>SpaceX, la empresa de exploración espacial fundada por Elon Musk, ha anunciado emocionantes planes para una nueva misión a Marte. Este anuncio marca un paso importante en la carrera por llevar a los humanos al Planeta Rojo.</p>
+        <p>La misión, programada para despegar en los próximos dos años, tiene como objetivo explorar Marte más a fondo que nunca antes. Se planea el envío de una nave espacial equipada con tecnología de vanguardia y un equipo de astronautas altamente capacitados.</p>
+        <h2>Los Objetivos de la Misión</h2>
+        <p>La nueva misión de SpaceX tiene varios objetivos clave. Uno de ellos es investigar la posibilidad de establecer una colonia humana permanente en Marte en un futuro cercano. Además, se llevarán a cabo experimentos científicos de vanguardia para comprender mejor la geología y la atmósfera marciana.</p>
+        <h2>El Viaje a Marte</h2>
+        <p>El viaje a Marte será un desafío monumental. Los astronautas de SpaceX se someterán a rigurosos entrenamientos y pruebas para prepararse para las condiciones extremas del espacio y la superficie marciana. La nave espacial estará equipada con tecnología avanzada para garantizar la seguridad y el éxito de la misión.</p>
+        <h2>Un Paso Hacia el Futuro</h2>
+        <p>La nueva misión de SpaceX a Marte representa un paso audaz hacia el futuro de la exploración espacial. Si tiene éxito, allanará el camino para la colonización de Marte y abrirá nuevas posibilidades para la humanidad en el espacio. El mundo observa con anticipación este emocionante capítulo en la historia de la exploración espacial.</p>
+    </div>
+</section>
+<p class="contador">Esta noticia la han visto <span id="n11">0</span> veces.</p>
+<a href="../index.html" class="volver-btn">Volver a la página principal</a>
+<a href="../noticasspacex.html" class="volver-btn">Volver a la página de Noticias SpaceX</a>
+
+
+</body>
+</html>

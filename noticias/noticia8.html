@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        // Verificar si el contador de visitas existe en el almacenamiento local
+        if (!localStorage.getItem('not9')) {
+            localStorage.setItem('not9', 0);
+        }
+        
+        // Incrementar el contador de visitas al cargar la página
+        window.onload = function() {
+            var not9 = parseInt(localStorage.getItem('not9'));
+            not9++;
+            localStorage.setItem('not9', not9);
+            document.getElementById('n9').innerText = not9;
+        };
+        </script>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>noticia8</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="icon" type="image/x-icon" href="../pace.ico">
+</head>
+<body>
+    <header>
+        <nav id='menu'>
+            <ul>
+                <li><a href='../index.html'>CosmicStore2</a></li>
+                <li><a href='../ofertasespeciales.html' title="Ofertas de la semana">Ofertas Especiales</a></li>
+                <li><a href='../tienda.html'>Tienda Espacial</a>
+                  <ul>
+                      <li><a href='../efectivo.html'>Envio Pago en Efectivo</a></li>
+                  </ul>
+              </li>
+                <li><a>Sistema Solar</a>
+                    <ul>
+                        <li><a href='../sistemasolar.html'>Imagenes</a>
+                            <ul>
+                                <li><a href='../sistemasolar.html'>Planetas</a></li>
+                                <li><a href='../galaxias.html'>Galaxias</a></li>
+                                <li><a href='../hubble.html'>Telescopio Hubble</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='../noticias.html'>Noticias</a>
+                            <ul>
+                                <li><a href='../noticias.html'>Noticias</a></li>
+                                <li><a href='../noticasspacex.html'>Space X</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a>Contenido Adicional</a>
+                    <ul>
+                        <li><a href='../comentarios.html' title="Dejanos tus comentarios">Comentarios</a></li>
+                        <li><a href='../metodos.html'>Metodos Interactivos</a></li>
+                        <li><a href='../resenas-espaciales.html'>Reseñas de seguidores</a></li>
+                    </ul>
+                </li>
+                <li><a title="Conócenos un poco más">Sobre Nosotros</a>
+                    <ul>
+                        <li><a>Desarrollador</a>
+                            <ul>
+                                <li><a href='../manuel/index2.html' target="_blank">Manuel</a></li>
+                            </ul>
+                        </li>
+                        <li><a title="Nuestra Misión" href='../mision.html'>Nuestra Misión</a></li>
+                        <li><a href='../donaciones.html'>Dejanos una donacion</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div id="logoContainer" class="logo-container">
+                <a href='../tienda.html'><img id="logoImage" src="../img/logo.jpg" alt="logo"></a>
+            </div>
+        </nav>
+    </header>
+<!-- IMAGEN HEADER QUE YA NO ES HEADER -->
+<section class="imagenheader text-center">
+   <div>
+       
+       <h1 class="h1header text-center">Explora el Espacio con Nosotros</h1>
+       
+       <br></br>
+       <p class="pheader text-center">Bienvenido a la página web sobre la exploración espacial. Descubre las Maravillas del universo.</p>
+   </div>
+</section>
+
+
+<section class="section-1">
+    <div>
+        <div>
+            <img src="../img/space6.jpg" alt="Noticia 8" class="custom-noticia-img">
+                <div>
+                    <h3>"Al Fin, Vida: Fascinantes Hallazgos en la Búsqueda de Planetas Extrasolares"</h3>
+                    <p>Posibilidad de vida más allá de nuestras fronteras planetarias y expandiendo los límites de nuestra exploración cósmica.</p>
+                </div>
+        </div>
+    </div>
+</section>
+
+<section class="section-2">
+    <div>
+        <h2>Al Fin, Vida: Fascinantes Hallazgos en la Búsqueda de Planetas Extrasolares</h2>
+        <p>En un emocionante giro de los eventos, un grupo internacional de científicos ha anunciado el hallazgo de evidencia que sugiere la posibilidad de vida en un planeta extrasolar. Este asombroso descubrimiento marca un hito en la búsqueda de vida más allá de nuestro sistema solar y nos llena de esperanza y expectación.</p>
+        <p>El planeta, denominado Esperanza-Alpha, orbita en la zona habitable de su estrella anfitriona, donde las condiciones podrían ser adecuadas para la existencia de agua líquida y, potencialmente, formas de vida. Los astrónomos han detectado señales químicas en la atmósfera de Esperanza-Alpha que podrían estar relacionadas con procesos biológicos.</p>
+        <h2>La Búsqueda de Signos de Vida</h2>
+        <p>Desde hace décadas, los científicos han buscado indicios de vida más allá de la Tierra, explorando planetas extrasolares en busca de señales de actividad biológica. El descubrimiento de señales químicas en la atmósfera de Esperanza-Alpha, como compuestos orgánicos complejos y variaciones en los gases atmosféricos, ha generado una gran emoción en la comunidad científica.</p>
+        <h2>La Importancia de la Confirmación</h2>
+        <p>Aunque los hallazgos son prometedores, los científicos enfatizan la importancia de la confirmación y el análisis exhaustivo antes de llegar a conclusiones definitivas. Varios equipos de investigadores están trabajando para recopilar más datos y llevar a cabo observaciones detalladas con la esperanza de confirmar la presencia de signos de vida en Esperanza-Alpha.</p>
+        <h2>Un Futuro de Posibilidades</h2>
+        <p>El descubrimiento de posibles signos de vida en un planeta extrasolar abre un mundo de posibilidades en la búsqueda de vida más allá de nuestro sistema solar. Los próximos años podrían traer avances revolucionarios en nuestra comprensión de la habitabilidad de otros mundos y la diversidad de formas de vida que podrían existir en el universo.</p>
+        <p>Este emocionante logro nos recuerda que estamos en el umbral de descubrimientos que podrían cambiar fundamentalmente nuestra comprensión de nuestro lugar en el cosmos y la posibilidad de que no estemos solos en la vastedad del espacio.</p>
+    </div>
+</section>
+<p class="contador">Esta noticia la han visto <span id="n9">0</span> veces.</p>
+<a href="../index.html" class="volver-btn">Volver a la página principal</a>
+<a href="../noticias.html" class="volver-btn">Volver a la página de Noticias</a>
+
+
+</body>
+</html>
